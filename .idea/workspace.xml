@@ -17,6 +17,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f5b5e539-4a61-4c4a-b410-705f3a5b238f" />
+        <option name="url" value="https://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@github.com/eyasuyid/Java-Advanced.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -97,7 +105,28 @@
       <option name="project" value="LOCAL" />
       <updated>1671193214559</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="java adavanced second training">
+      <created>1671193521106</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671193521106</updated>
+    </task>
+    <task id="LOCAL-00003" summary="java adavanced second training">
+      <created>1671193616213</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671193616213</updated>
+    </task>
+    <task id="LOCAL-00004" summary="java adavanced second training">
+      <created>1671193770746</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671193770746</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
