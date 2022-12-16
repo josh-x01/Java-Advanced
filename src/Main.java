@@ -1,9 +1,14 @@
-import generic.GenericFunc.*;
-import static generic.GenericFunc.*;
+import static com.javaGeneric.GenericClass.*;
+import com.javaGeneric.GenericClass.*;
+import com.javaMultiThread.MyThread;
+import com.javaGeneric.players.*;
 
-public class Main {
+import java.util.ArrayList;
+
+class Main {
     public static void main(String[] args) {
-    	System.out.println("Hello linux in java");
-        testGeneric();
+        MyThread mt = new MyThread("child 1");
+        MyThread mt2 = new MyThread("child 2");
+
     }
 }
