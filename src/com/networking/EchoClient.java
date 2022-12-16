@@ -17,6 +17,7 @@ public class EchoClient {
             String echoString;
             String respose;
 
+
             do {
                 System.out.print("Enter string to be echoed: ");
                 echoString = scanner.nextLine();
