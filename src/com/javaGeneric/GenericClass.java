@@ -1,6 +1,9 @@
 package com.javaGeneric;
 
 
+import java.awt.print.PrinterGraphics;
+import java.util.ArrayList;
+
 public class GenericClass {
     public static void testGeneric() {
         System.out.println("Generic class is working!");
@@ -26,5 +29,28 @@ public class GenericClass {
             System.out.printf("%s ", i);
         }
         System.out.println();
+    }
+}
+
+class FindTarget {
+    static Integer[] findTarget(Integer[] arr, int target) {
+        Integer[] targets = new Integer[2];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 1; j < arr.length; j++) {
+                if ((arr[i] + arr[j]) == target) {
+                    targets[0] = i;
+                    targets[1] = j;
+                    return  targets;
+                }
+            }
+        }
+        return  null;
+    }
+
+    public static void main(String[] args) {
+        Integer[] arr = {2, 6, 7, 8};
+        int target = 15;
+        Integer[] resultArr = findTarget(arr, target);
+        System.out.println("["+ resultArr[0] + ", " + resultArr[1] +"]");
     }
 }

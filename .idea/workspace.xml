@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="java-advanced:jar2" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="64400e3e-803b-4e17-bb23-ee7ba3827707" name="Changes" comment="java adavanced second training" />
+    <list default="true" id="64400e3e-803b-4e17-bb23-ee7ba3827707" name="Changes" comment="echoer created">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/java_advanced_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/javaGeneric/GenericAss.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jdbc/JDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-advanced.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-advanced.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/javaGeneric/GenericClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javaGeneric/GenericClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/javaMultiThread/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javaMultiThread/MyThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/networking/EchoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/networking/EchoClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/networking/EchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/networking/EchoServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/networking/Echoer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/networking/Echoer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,11 +62,47 @@
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/eyasu/IdeaProjects/java-advanced/src/com/jdbc/mysql-connector-java-8.0.29.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.EchoClient">
-    <configuration name="EchoClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eyasu\IdeaProjects\java-advanced\src\com\jdbc" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.FindTarget">
+    <configuration name="CallJDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jdbc.CallJDBC" />
+      <module name="java-advanced" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CallThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javaMultiThread.CallThread" />
+      <module name="java-advanced" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javaMultiThread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false">
       <option name="MAIN_CLASS_NAME" value="com.networking.EchoClient" />
       <module name="java-advanced" />
       <extension name="coverage">
@@ -61,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EchoServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.networking.EchoServer" />
+    <configuration name="FindTarget" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javaGeneric.FindTarget" />
       <module name="java-advanced" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.networking.*" />
+          <option name="PATTERN" value="com.javaGeneric.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,18 +128,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="GenericAss" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javaGeneric.GenericAss" />
       <module name="java-advanced" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javaGeneric.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ListExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javaGeneric.ListExample" />
+      <module name="java-advanced" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javaGeneric.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.FindTarget" />
+      <item itemvalue="Application.CallThread" />
+      <item itemvalue="Application.ListExample" />
+      <item itemvalue="Application.CallJDBC" />
+      <item itemvalue="Application.GenericAss" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EchoClient" />
-        <item itemvalue="Application.EchoServer" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.FindTarget" />
+        <item itemvalue="Application.CallThread" />
+        <item itemvalue="Application.ListExample" />
+        <item itemvalue="Application.CallJDBC" />
+        <item itemvalue="Application.GenericAss" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671193770746</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="echoer created">
+      <created>1671195338761</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671195338761</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,6 +232,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="java adavanced second training" />
-    <option name="LAST_COMMIT_MESSAGE" value="java adavanced second training" />
+    <MESSAGE value="echoer created" />
+    <option name="LAST_COMMIT_MESSAGE" value="echoer created" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/javaMultiThread/MyThread.java</url>
+          <line>82</line>
+          <properties class="com.javaMultiThread.CallThread" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
