@@ -54,3 +54,26 @@ class FindTarget {
         System.out.println("["+ resultArr[0] + ", " + resultArr[1] +"]");
     }
 }
+
+class GenericMethod {
+
+    static <T>  void checkGeneric(T t) {
+        if (t instanceof Integer) {
+            System.out.println("is id");
+        } else if (t instanceof String) {
+            try {
+                Integer.parseInt((String) t);
+                System.out.println("is phone");
+            } catch (NumberFormatException e) {
+                System.out.println("is String");
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Integer num = 5;
+        String name = "josh";
+        String phone = "0960077672";
+        checkGeneric(num);
+    }
+}

@@ -147,7 +147,7 @@ class RowSet {
 
 class CallJDBC {
     public static void main(String[] args) {
-//        JDBC jdbc = new JDBC();
-        RowSet rowSet = new RowSet();
+        JDBC jdbc = new JDBC();
+//        RowSet rowSet = new RowSet();
     }
 }
