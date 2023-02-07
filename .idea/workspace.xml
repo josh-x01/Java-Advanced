@@ -6,13 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64400e3e-803b-4e17-bb23-ee7ba3827707" name="Changes" comment="thread and generic update for mid exam">
-      <change afterPath="$PROJECT_DIR$/src/com/jdbc/HashPassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jdbc/Image.java" afterDir="false" />
+    <list default="true" id="64400e3e-803b-4e17-bb23-ee7ba3827707" name="Changes" comment="after mind commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-advanced.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-advanced.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javaGeneric/GenericClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javaGeneric/GenericClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jdbc/JDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jdbc/JDBC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,13 +64,13 @@
       <recent name="C:\Users\eyasu\IdeaProjects\java-advanced\src\com\jdbc" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Image">
-    <configuration name="CallJDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jdbc.CallJDBC" />
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false">
+      <option name="MAIN_CLASS_NAME" value="com.networking.EchoClient" />
       <module name="java-advanced" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jdbc.*" />
+          <option name="PATTERN" value="com.networking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,8 +78,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" singleton="false">
-      <option name="MAIN_CLASS_NAME" value="com.networking.EchoClient" />
+    <configuration name="EchoServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.networking.EchoServer" />
       <module name="java-advanced" />
       <extension name="coverage">
         <pattern>
@@ -149,8 +144,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CallJDBC" />
       <item itemvalue="Application.Client" />
+      <item itemvalue="Application.EchoServer" />
       <item itemvalue="Application.GenericMethod" />
       <item itemvalue="Application.HashPassword" />
       <item itemvalue="Application.HashVerfy" />
@@ -158,11 +153,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EchoServer" />
         <item itemvalue="Application.Image" />
         <item itemvalue="Application.HashVerfy" />
         <item itemvalue="Application.HashPassword" />
         <item itemvalue="Application.GenericMethod" />
-        <item itemvalue="Application.CallJDBC" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672686814219</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="after mind commit">
+      <created>1674593805609</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674593805609</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,7 +244,8 @@
     <MESSAGE value="java adavanced second training" />
     <MESSAGE value="echoer created" />
     <MESSAGE value="thread and generic update for mid exam" />
-    <option name="LAST_COMMIT_MESSAGE" value="thread and generic update for mid exam" />
+    <MESSAGE value="after mind commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="after mind commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -255,6 +258,11 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/jdbc/JDBC.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
