@@ -1,8 +1,5 @@
 package com.jdbc;
 
-
-import at.favre.lib.crypto.bcrypt.BCrypt;
-
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 import java.math.BigInteger;

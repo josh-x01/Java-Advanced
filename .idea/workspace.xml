@@ -6,8 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64400e3e-803b-4e17-bb23-ee7ba3827707" name="Changes" comment="after mind commit">
-      <change afterPath="$PROJECT_DIR$/src/com/rmi/RMIServer.java" afterDir="false" />
+    <list default="true" id="64400e3e-803b-4e17-bb23-ee7ba3827707" name="Changes" comment="rmi tested">
+      <change afterPath="$PROJECT_DIR$/src/com/networking/socket/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/networking/socket/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jdbc/HashPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jdbc/HashPassword.java" afterDir="false" />
     </list>
@@ -67,7 +68,22 @@
       <recent name="C:\Users\eyasu\IdeaProjects\java-advanced\src\com\jdbc" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.rmi.RunClient">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.networking.socket.Client" />
+      <module name="java-advanced" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.networking.socket.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RunServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="19" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -76,6 +92,21 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.rmi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.networking.socket.Server" />
+      <module name="java-advanced" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.networking.socket.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,11 +138,15 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.com.rmi.RunClient" />
+      <item itemvalue="Application.Client" />
       <item itemvalue="Application.RunServer" />
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.com.rmi.RunClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
         <item itemvalue="Application.com.rmi.RunClient" />
         <item itemvalue="Application.RunServer" />
       </list>
@@ -182,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674593805609</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="rmi tested">
+      <created>1675795676123</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675795676123</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,7 +243,8 @@
     <MESSAGE value="echoer created" />
     <MESSAGE value="thread and generic update for mid exam" />
     <MESSAGE value="after mind commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="after mind commit" />
+    <MESSAGE value="rmi tested" />
+    <option name="LAST_COMMIT_MESSAGE" value="rmi tested" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
