@@ -7,7 +7,7 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.server.UnicastRemoteObject;
 
 interface RMI extends Remote {
-    public static final int port = 60000;
+    public static final int port = 5000;
     String sayHello() throws RemoteException;
 }
 
