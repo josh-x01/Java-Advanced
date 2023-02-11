@@ -7,12 +7,13 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.server.UnicastRemoteObject;
 
 interface RMI extends Remote {
+    public static final int port = 60000;
     String sayHello() throws RemoteException;
 }
 
 public class RMIServer extends UnicastRemoteObject implements RMI {
 
-    public RMIServer(int port) throws RemoteException {
+    public RMIServer() throws RemoteException {
         super(port);
     }
 
@@ -25,8 +26,8 @@ public class RMIServer extends UnicastRemoteObject implements RMI {
 class RunServer {
     public static void main(String[] args) {
         try {
-            LocateRegistry.createRegistry(5000);
-            RMI rmiObj = new RMIServer(5000);
+            LocateRegistry.createRegistry(RMI.port);
+            RMI rmiObj = new RMIServer();
             Naming.rebind("rmi://localhost:5000/RMI_SERVER", rmiObj);
         } catch (Exception e) {
             e.printStackTrace();

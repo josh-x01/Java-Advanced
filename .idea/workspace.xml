@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64400e3e-803b-4e17-bb23-ee7ba3827707" name="Changes" comment="rmi tested">
-      <change afterPath="$PROJECT_DIR$/src/com/networking/socket/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/networking/socket/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jdbc/HashPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jdbc/HashPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rmi/RMIServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rmi/RMIServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +66,7 @@
       <recent name="C:\Users\eyasu\IdeaProjects\java-advanced\src\com\jdbc" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.RunServer">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="19" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -145,10 +143,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RunServer" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.com.rmi.RunClient" />
-        <item itemvalue="Application.RunServer" />
       </list>
     </recent_temporary>
   </component>
