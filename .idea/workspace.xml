@@ -7,12 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64400e3e-803b-4e17-bb23-ee7ba3827707" name="Changes" comment="rmi tested">
-      <change afterPath="$PROJECT_DIR$/src/com/networking/online/OnlineClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/networking/online/OnlineServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/rmi/online/TestClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/rmi/online/TestInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/rmi/dani/EmployeeManagement2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/rmi/online/EmployeeManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rmi/RMIServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rmi/RMIServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,15 +67,15 @@
       <recent name="C:\Users\eyasu\IdeaProjects\java-advanced\src\com\jdbc" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RunServer">
-    <configuration name="OnlineClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.com.rmi.online.RunClient">
+    <configuration name="RunClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="19" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.networking.online.OnlineClient" />
+      <option name="MAIN_CLASS_NAME" value="com.rmi.online.RunClient" />
       <module name="java-advanced" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.networking.online.*" />
+          <option name="PATTERN" value="com.rmi.dani.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,36 +91,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.rmi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="19" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.rmi.online.TestClass" />
-      <module name="java-advanced" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rmi.online.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="19" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.rmi.online.TestClient" />
-      <module name="java-advanced" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rmi.online.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,20 +121,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.rmi.online.RunEmployeeServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.rmi.online.RunEmployeeServer" />
+      <module name="java-advanced" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rmi.dani.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.rmi.online.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.rmi.online.Test" />
+      <module name="java-advanced" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rmi.dani.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.OnlineClient" />
-      <item itemvalue="Application.TestClass" />
-      <item itemvalue="Application.TestClient" />
+      <item itemvalue="Application.com.rmi.online.RunEmployeeServer" />
+      <item itemvalue="Application.com.rmi.online.Test" />
+      <item itemvalue="Application.com.rmi.online.RunClient" />
       <item itemvalue="Application.RunServer" />
       <item itemvalue="Application.com.rmi.RunClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.rmi.online.RunClient" />
+        <item itemvalue="Application.com.rmi.online.RunEmployeeServer" />
+        <item itemvalue="Application.com.rmi.online.Test" />
         <item itemvalue="Application.com.rmi.RunClient" />
         <item itemvalue="Application.RunServer" />
-        <item itemvalue="Application.TestClass" />
-        <item itemvalue="Application.TestClient" />
-        <item itemvalue="Application.OnlineClient" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676120061730</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="rmi tested">
+      <created>1676232648002</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676232648002</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -291,11 +295,24 @@
           </properties>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/rmi/dani/EmployeeManagement2.java</url>
+          <line>38</line>
+          <properties class="com.rmi.dani.EmployeeManagement2" method="createEmployee">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/jdbc/JDBC.java</url>
           <line>13</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.InputMismatchException" package="java.util" />
+          <option name="timeStamp" value="6" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
