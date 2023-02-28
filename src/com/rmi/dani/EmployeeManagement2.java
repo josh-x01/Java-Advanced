@@ -14,8 +14,6 @@ void updateEmployee(int cid, String employeeName, String position) throws Remote
 void deleteEmployee(int cid) throws RemoteException;
 }
 
-
-
 public class EmployeeManagement2 extends UnicastRemoteObject implements employeeInterface {
     Connection con = null;
     PreparedStatement ps = null;
@@ -27,7 +25,6 @@ public class EmployeeManagement2 extends UnicastRemoteObject implements employee
         try {
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/employee", "admin", "admin");
-            System.out.println("SQL connection established.");
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e){
@@ -51,8 +48,8 @@ public class EmployeeManagement2 extends UnicastRemoteObject implements employee
     }
 
     @Override
-    public void updateEmployee(int cid, String employeeName, String position) throws RemoteException {
-        sql = "UPDATE " + table + " SET name=?, position=? WHERE id=?";
+        public void updateEmployee(int cid, String employeeName, String position) throws RemoteException {
+        sql = "UPDATE " + table + " SET name=?, position=? WHERE cid=?";
         try {
             ps = con.prepareStatement(sql);
             ps.setString(1, employeeName);
@@ -67,7 +64,7 @@ public class EmployeeManagement2 extends UnicastRemoteObject implements employee
 
     @Override
     public void deleteEmployee(int cid) throws RemoteException {
-        sql = "DELETE FROM " + table + " WHERE id=?";
+        sql = "DELETE FROM " + table + " WHERE cid=?";
         try {
             ps = con.prepareStatement(sql);
             ps.setInt(1, cid);
@@ -81,19 +78,17 @@ public class EmployeeManagement2 extends UnicastRemoteObject implements employee
 
 class Server {
     public static void main(String[] args) {
-        int port = 5000;
-        String url = "rmi://localhost:"+port+"/EMP_MAN";
+        int port = 4321;
+        String url = "rmi://localhost:"+port+"/EMP";
         try {
-            System.out.println("Server started!");
+            System.out.println("Server running...");
             LocateRegistry.createRegistry(port);
             employeeInterface employeeSystem = new EmployeeManagement2();
             Naming.rebind(url, employeeSystem);
-            System.out.println("[OK] remote object bind successfully!");
-            System.out.println("Waiting for client request . . .");
         } catch (RemoteException e) {
-            System.err.println("Can't register the driver!");
+            e.printStackTrace();
         } catch (MalformedURLException e) {
-            System.err.println("Something went wrong on url mapping!");
+            e.printStackTrace();
         }
     }
 }
@@ -103,17 +98,18 @@ class Client {
     static private int port = 4321;
     static private String postion;
     static private Integer id;
-    static private String url = "rmi://localhost:"+port+"/employee", name, msg = "";
+    static private String url = "rmi://localhost:"+port+"/EMP";
+    static private String name;
     static private char choice;
     static private Scanner scanner = new Scanner(System.in);
-    static void menu() {
+    static void option() {
         System.out.println("1. Create Employee" +
                 "\n2. Update Employee" +
                 "\n3. Delete Employee" +
                 "\n4. Stop Program");
     }
 
-    static void inputManager() {
+    static void clientAcceptor() {
         System.out.print("\tEmployee id: ");
         id = scanner.nextInt();
         if (choice == '3')
@@ -127,30 +123,26 @@ class Client {
     public static void main(String[] args) {
         try {
             employeeSystem = (employeeInterface) Naming.lookup(url);
-        } catch (NotBoundException e) {
-          e.printStackTrace();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
         while (true) {
             try {
-                menu();
+                option();
                 System.out.print("1/2/3/q: ");
                 choice = scanner.next().charAt(0);
                 switch (choice) {
                     case '1':
-                        inputManager();
+                        clientAcceptor();
                         employeeSystem.createEmployee(id, name, postion);
                         break;
                     case '2':
-                        inputManager();
+                        clientAcceptor();
                         employeeSystem.updateEmployee(id, name, postion);
                         break;
                     case '3':
-                        inputManager();
+                        clientAcceptor();
                         employeeSystem.deleteEmployee(id);
                         break;
                     default:
@@ -159,12 +151,10 @@ class Client {
                 if (choice == 'q')
                     break;
             } catch (IOException e) {
-                System.err.println("Something went wrong! IOException occurs.");
+                e.printStackTrace();
             } catch (NullPointerException e) {
                 System.err.println("Null value!");
             }
         }
-
-
     }
 }

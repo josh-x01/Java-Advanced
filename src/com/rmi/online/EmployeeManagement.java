@@ -29,8 +29,8 @@ public class EmployeeManagement extends UnicastRemoteObject implements EmployeeS
     private PreparedStatement preparedStatement = null;
     private String sql = "";
     private String table = "employee";
-    private String DBUsername = "root";
-    private String DBPassword = "root";
+    private String DBUsername = "employee";
+    private String DBPassword = "employee";
     private String DBUrl = "jdbc:mysql://localhost:3306/employee";
     public EmployeeManagement() throws RemoteException{
         super();
@@ -98,14 +98,6 @@ public class EmployeeManagement extends UnicastRemoteObject implements EmployeeS
 }
 
 class RunEmployeeServer {
-    static String getIP() {
-        try {
-            return RemoteServer.getClientHost();
-        } catch (ServerNotActiveException e) {
-            e.printStackTrace();
-        }
-        return "";
-    }
     public static void main(String[] args) {
         int port = 5000;
         String url = "rmi://localhost:"+port+"/EMP_MAN";
